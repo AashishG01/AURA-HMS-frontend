@@ -6,7 +6,8 @@ import {
 } from 'lucide-react';
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 
-const BACKEND_URL = "https://aura-hms-backend.onrender.com";
+// const BACKEND_URL = "https://aura-hms-backend.onrender.com";
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:3000";
 const COLORS = {
   Available: '#10b981', // Green
   Occupied: '#ef4444',  // Red
